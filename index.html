@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🍔 Lanchonete Dev</h1>
+            <p>O melhor lanche da cidade, direto para o seu navegador!</p>
+        </div>
+    </header>
+
+    <main>
+        <h2>Nosso Cardápio</h2>
+        
+        <div class="menu-grid">
+            <div class="card">
+                <h3>X-Bacon</h3>
+                <p>Hambúrguer artesanal 150g, muito bacon, queijo derretido e salada fresca.</p>
+                <div class="price-action">
+                    <span class="price">R$ 28,00</span>
+                    <button onclick="fazerPedido('X-Bacon')">Pedir</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Batata Frita Especial</h3>
+                <p>Porção de 400g bem crocante com cheddar e bacon.</p>
+                <div class="price-action">
+                    <span class="price">R$ 22,00</span>
+                    <button onclick="fazerPedido('Batata Frita Especial')">Pedir</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Refrigerante Lata</h3>
+                <p>Coca-Cola, Guaraná Antarctica ou Sprite (350ml).</p>
+                <div class="price-action">
+                    <span class="price">R$ 7,00</span>
+                    <button onclick="fazerPedido('Refrigerante Lata')">Pedir</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lanchonete Dev - Trabalho Acadêmico</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

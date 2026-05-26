@@ -1,0 +1,104 @@
+/* Reset básico para tirar margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Cabeçalho vermelho típico de fast-food */
+header {
+    background-color: #d90429;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2b2d42;
+    font-size: 2rem;
+}
+
+/* Grid para alinhar os itens do cardápio lado a lado no PC */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Estilo do cartão do lanche */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #d90429;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    min-height: 40px;
+}
+
+.price-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2b2d42;
+}
+
+/* Botão amarelo/laranja */
+button {
+    background-color: #ffb703;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #fb8500;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2b2d42;
+    color: white;
+    margin-top: 3rem;
+}
